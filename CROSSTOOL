@@ -1,9 +1,9 @@
 major_version: "local"
 minor_version: ""
-default_target_cpu: "same_as_host"
+default_target_cpu: "linux_x86_64"
 
 default_toolchain {
-  cpu: "local"
+  cpu: "linux_x86_64"
   toolchain_identifier: "local"
 }
 
@@ -13,7 +13,7 @@ toolchain {
   abi_version: "local"
   abi_libc_version: "local"
   builtin_sysroot: ""
-  compiler: "compiler"
+  compiler: "clang"
   host_system_name: "local"
   needsPic: true
   supports_gold_linker: true
@@ -23,7 +23,7 @@ toolchain {
   supports_normalizing_ar: false
   supports_start_end_lib: true
   target_libc: "local"
-  target_cpu: "k8"
+  target_cpu: "linux_x86_64"
   target_system_name: "local"
   cxx_flag: "-std=c++11"
   linker_flag: "-lstdc++"
